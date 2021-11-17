@@ -1,0 +1,233 @@
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   color: rgb(0, 0, 0);
+}
+
+
+   .hidden {
+       display: none;
+   }
+
+   .box-model {
+      margin: 1rem;
+      padding: 1rem;
+      background: rgb(255, 255, 255);
+   }
+
+   section {
+      margin: 3rem 0;
+   }
+
+   .spacer {
+      margin: .5em;
+   }
+
+/* _____________________________________
+
+   02. CSS Grid
+   _____________________________________ */
+
+   @supports (grid-area: auto) {
+     
+      .site {
+         max-width: none;
+      }
+
+      /*--------- Grid Items ---------*/
+      .nav ul {
+         list-style-type: none;
+         margin: 0;
+         padding: 6em;
+         background-color: #000000;
+         border-radius: 9em;
+       }
+       li a {
+         display: inline;
+         color: rgb(255, 255, 255);
+         text-align: center;
+         word-spacing: 1px;
+         padding: 4em;
+         text-decoration: none;
+       }
+       li a:hover {
+         padding: 6em;
+         background-color: #ff0000;
+       }
+
+       .foot ul {
+         list-style-type: none;
+         margin: 0;
+         padding: 6em;
+         background-color: #000000;
+         
+       }
+       li a {
+         display: inline;
+         color: rgb(255, 255, 255);
+         text-align: center;
+         padding: 6em;
+       }
+       li a:hover {
+         padding: 6em;
+         background-color: #ff0000;
+       }
+      
+       .head, .main > *, .foot > * {
+         display: grid;
+         grid-template-columns: 1fr repeat(2,minmax(auto, 30em)) 1fr;
+         text-align: center;
+         
+      }
+
+
+      .one-item {
+         display: grid;
+         grid-column: 1 / span 1 ;
+         grid-template-columns: .5fr;
+         grid-template-columns: 1fr repeat(2,minmax(auto, 30em)) 1fr;
+         text-align: center;
+         align-self: flex-end;
+         justify-self: end;
+         margin-right: 9em;
+         margin-left: 9em;
+
+      }
+
+      .two-items {
+         display: grid;
+         grid-column: 2 / span 2 ;
+         grid-template-columns: .5fr;
+         grid-template-columns: 1fr repeat(2,minmax(auto, 30em)) 1fr;
+         text-align: center;
+         align-self: flex-end;
+         justify-self: end;
+         margin-right: 9em;
+         margin-left: 9em;
+
+      }
+
+      .three-items {
+         display: grid;
+         grid-column: 2 / span 2;
+         grid-template-columns: repeat(3, 1fr);
+         justify-content: space-evenly;
+         row-gap: 2em;
+         column-gap: 2em;
+      }
+      .six-items {
+         display: grid;
+         grid-column: 2 / span 2;
+         grid-template-columns: repeat(3, 1fr);
+         justify-content: space-evenly;
+         row-gap: 2em;
+         column-gap: 2em;
+         margin-left: 30em;
+      }
+
+      .nine-items {
+         display: grid;
+         grid-column: 2 / span 2;
+         grid-template-columns: repeat(3, 1fr);
+         justify-content: space-evenly;
+         row-gap: 2em;
+         column-gap: 2em;
+         margin-left: 30em;
+      }
+      }
+
+      /*--------- End Grid Items ---------*/
+
+      /*--------- Site Header ---------*/
+
+      .logo {
+         grid-column: 1 / span 1; /* first number is what grid number to start at, the secon is how far to span */
+         size-adjust: 4em;
+      }
+      
+      .logo img {
+         padding: 1em;
+         width: 18em;
+      }
+
+      .nav {
+         grid-column: 2 / span 3;
+         justify-content: space-evenly;
+      
+      }
+      .foot {
+         grid-column: 1 / span 4;
+         width: 100%;
+         
+         
+      }
+      
+      /*--------- End Site Header ---------*/
+
+      /*--------- Start Hero ---------*/
+
+      .hero {
+         margin: 0 0;
+      }
+
+      .hero-img img {
+         width: 100%;
+      }
+
+      .hero-img {
+         display: grid;
+         grid-column: span 4;
+         margin-bottom: 1rem;
+      }
+
+      .hero-img > * {
+         grid-column: 1;
+         grid-row: 1;
+      }
+
+      .hero-img h2.right {
+         align-self: flex-end;
+         justify-self: end;
+         margin-right: 9em;
+      }
+
+      .hero-img h2.left {
+         align-self: flex-end;
+         justify-self: start;
+         margin-left: 9em;
+      }
+
+      /*--------- End Hero ---------*/
+
+   
+
+
