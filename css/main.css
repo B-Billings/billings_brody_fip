@@ -64,14 +64,49 @@ body {
       }
 
       /*--------- Grid Items ---------*/
-      
+
+      /* NAV */
       .nav ul {
          list-style-type: none;
          margin: 0;
          padding: 6em;
          background-color: #000000;
          border-radius: 9em;
+      
        }
+       /* FOOTER */
+       .foot ul {
+         list-style-type: none;
+         margin: 0;
+         padding: 2em;
+         background-color: #000000;
+         justify-content: space-evenly;
+       }
+
+       .foot ul li {
+         list-style-type: none;
+         display: felx;
+         margin: 0;
+         padding: 6em;
+         background-color: #000000;
+         justify-content: center;
+         grid-column: 0  4;
+         
+       }
+      }
+
+      .foot li a {
+        display: inline;
+        color: rgb(255, 255, 255);
+        text-align: left;
+        word-spacing: 1px;
+        padding: 2em;
+        text-decoration: none;
+
+        
+
+      }
+      /* UL LI SETTIMGS */
        li a {
          display: inline;
          color: rgb(255, 255, 255);
@@ -84,25 +119,8 @@ body {
          padding: 6em;
          background-color: #ff0000;
        }
-
-       .foot ul {
-         list-style-type: none;
-         margin: 0;
-         padding: 6em;
-         background-color: #000000;
-         
-       }
-       li a {
-         display: inline;
-         color: rgb(255, 255, 255);
-         text-align: center;
-         padding: 6em;
-       }
-       li a:hover {
-         padding: 6em;
-         background-color: #ff0000;
-       }
       
+
        .head, .main > *, .foot > * {
          display: grid;
          grid-template-columns: 1fr repeat(2,minmax(auto, 30em)) 1fr;
@@ -110,7 +128,7 @@ body {
          
       }
 
-
+      /* MAIN CONTENT */
       .one-item {
          display: grid;
          grid-column: 1 / span 1 ;
@@ -167,7 +185,7 @@ body {
          column-gap: 2em;
          margin-left: 30em;
       }
-      }
+      
 
       /*--------- End Grid Items ---------*/
 
@@ -190,11 +208,11 @@ body {
       }
       .foot {
          grid-column: 1 / span 4;
-         width: 100%;
-         
          
       }
-      
+      .foot-ul{
+         justify-content: space-evenly;
+      }
       /*--------- End Site Header ---------*/
 
       /*--------- Start Hero ---------*/
