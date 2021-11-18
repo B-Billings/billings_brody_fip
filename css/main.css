@@ -64,6 +64,7 @@ body {
       }
 
       /*--------- Grid Items ---------*/
+      
       .nav ul {
          list-style-type: none;
          margin: 0;
@@ -152,6 +153,8 @@ body {
          row-gap: 2em;
          column-gap: 2em;
          margin-left: 30em;
+         
+      
       }
 
       .nine-items {
