@@ -74,52 +74,6 @@ body {
          border-radius: 9em;
       
        }
-       /* FOOTER */
-       .foot ul {
-         list-style-type: none;
-         margin: 0;
-         padding: 2em;
-         background-color: #000000;
-         justify-content: space-evenly;
-       }
-
-       .foot ul li {
-         list-style-type: none;
-         display: felx;
-         margin: 0;
-         padding: 6em;
-         background-color: #000000;
-         justify-content: center;
-         grid-column: 0  4;
-         
-       }
-      }
-
-      .foot li a {
-        display: inline;
-        color: rgb(255, 255, 255);
-        text-align: left;
-        word-spacing: 1px;
-        padding: 2em;
-        text-decoration: none;
-
-        
-
-      }
-      /* UL LI SETTIMGS */
-       li a {
-         display: inline;
-         color: rgb(255, 255, 255);
-         text-align: center;
-         word-spacing: 1px;
-         padding: 4em;
-         text-decoration: none;
-       }
-       li a:hover {
-         padding: 6em;
-         background-color: #ff0000;
-       }
-      
 
        .head, .main > *, .foot > * {
          display: grid;
@@ -249,7 +203,49 @@ body {
       }
 
       /*--------- End Hero ---------*/
+      
+       /*--------- FOOTER ---------*/
+       .foot ul {
+         list-style-type: none;
+         margin: 0;
+         padding: 2em;
+         background-color: #000000;
+         justify-content: space-evenly;
+         
+       }
 
+       .foot-ul ul li {
+         list-style-type: none;
+         display: inline;
+         margin: 0;
+         padding: 6em;
+         background-color: #000000;
+         justify-content: center;
+         grid-column: 0  4;
+         
+       }
+      
+
+      .foot li a {
+        display: inline;
+        color: rgb(255, 255, 255);
+        text-align: left;
+        word-spacing: 1px;
+        padding: 2em; 
+      }
+      /* UL LI SETTIIGS */
+       li a {
+         display: inline;
+         color: rgb(255, 255, 255);
+         text-align: center;
+         padding: 4em;
+         text-decoration: none;
+       }
+       li a:hover {
+         padding: 6em;
+         background-color: #ff0000;
+       }
+      
    
-
+      }
 
