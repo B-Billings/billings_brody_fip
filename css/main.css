@@ -45,6 +45,7 @@ text-decoration: none;
       margin: 1rem;
       padding: 1rem;
       background: rgb(255, 255, 255);
+      column-gap: 2em;
    }
 
    section {
@@ -91,16 +92,15 @@ text-decoration: none;
 
       .two-items {
          display: grid;
-         grid-column: 2 / span 2 ;
-         grid-template-columns: .5fr;
-         grid-template-columns: 1fr repeat(2,minmax(auto, 30em)) 1fr;
-         text-align: center;
-         align-self: flex-end;
-         justify-self: end;
-         margin-right: 9em;
-         margin-left: 9em;
+         grid-column: 2 / span 3;
+         grid-template-columns: repeat(3, 1fr);
+         justify-content: space-evenly;
+         row-gap: 2em;
+         column-gap: 2em;
+         text-align: left;
 
       }
+
 
       .three-items {
          display: grid;
