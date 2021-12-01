@@ -26,6 +26,7 @@
 	width: auto;
 	z-index: 100000;
 }
+/* CSS Class changes */
 
 body {
    margin: 0;
@@ -82,7 +83,6 @@ text-decoration: none;
          
       }
 
-      /* MAIN CONTENT */
       .one-item {
          display: grid;
          grid-column: 1 / span 1 ;
@@ -142,7 +142,7 @@ text-decoration: none;
 
       /*--------- End Grid Items ---------*/
 
-      /*--------- Site Header ---------*/
+      /*--------- Site Hero ---------*/
 
       .logo {
          grid-column: 1 / span 1; /* first number is what grid number to start at, the secon is how far to span */
@@ -185,7 +185,9 @@ text-decoration: none;
       }
 
       /*--------- End Hero ---------*/
-       /* NAV */
+
+
+       /*---------- NAV ----------*/
        .nav {
          grid-column: 2 / span 3;
          justify-content: space-evenly;
@@ -205,8 +207,9 @@ text-decoration: none;
          margin: 7em;
          text-decoration: none;
       }
-
-            /* footer */
+      /*---------- END NAV ----------*/
+      
+      /*---------- Footer ----------*/
       .foot {
          grid-column: 1 / span 4;
          justify-content: space-evenly;
@@ -230,7 +233,11 @@ text-decoration: none;
        .instalogo img {
          width: 2em;
       }
-      /* form */
+
+      /*---------- END Footer ----------*/
+
+
+      /*---------- Form ----------*/
       input, textarea{
          padding: .75em;
          border: 1px solid black;
@@ -239,6 +246,8 @@ text-decoration: none;
          margin-bottom: 1em;
          width: 100%;
       }
+
+      /*---------- END Form ----------*/
    
    }
 
