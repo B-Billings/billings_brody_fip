@@ -118,10 +118,18 @@ input, textarea {
 
       }
 
-
       .three-items {
          display: grid;
-         grid-column: 2 / span 2;
+         grid-column: 1 / span 4;
+         grid-template-columns: repeat(3, 1fr);
+         justify-content: space-evenly;
+         row-gap: 2em;
+         column-gap: 2em;
+         
+      }
+      .three-itemsform {
+         display: grid;
+         grid-column: 1 / span 3;
          grid-template-columns: repeat(3, 1fr);
          justify-content: space-evenly;
          row-gap: 2em;
@@ -244,24 +252,22 @@ input, textarea {
       input, textarea{
          padding: .75em;
          border: 1px solid black;
-         background-color: #f7f7f7;
+         background-color: #000000;
          border-radius: 5px;
          margin-bottom: 1em;
-         width: 100%;
+         width: 500px;
          margin-left: 35em;
+         color: white;
          
       }
-
-      .form {
-         display: grid;
-         grid-column: 2 span 3;
-         background-color: aqua;
-         display: grid;
-         
+      .form input[type="button"]{
+         width: 8em;
+         background-color: black;
+         color: rgb(255, 255, 255);
+         float: right;
       }
-
-      button {
-         width: 50%;
+      .three-itemsform img {
+         width: 150%;
       }
       /*---------- END Form ----------*/
 
