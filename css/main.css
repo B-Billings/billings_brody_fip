@@ -27,11 +27,11 @@
 	z-index: 100000;
 }
 /* CSS Class changes */
-
 body {
    margin: 0;
    padding: 0;
    color: rgb(0, 0, 0);
+   font-family: 'Roboto', sans-serif;
 }
 
 a { 
@@ -73,6 +73,10 @@ input, textarea {
    margin: 0;
    padding: 0;
    
+}
+
+.active {
+color: red;
 }
 /* _____________________________________
 
@@ -216,6 +220,11 @@ input, textarea {
          margin: 7em;
          text-decoration: none;
       }
+
+      nav li a:hover{
+         text-decoration: underline;
+         color: red;
+      }
       /*---------- END NAV ----------*/    
 
       
@@ -251,7 +260,7 @@ input, textarea {
       /*---------- Form ----------*/
       input, textarea{
          padding: .75em;
-         border: 1px solid black;
+         border: 1px solid rgb(54, 54, 54);
          background-color: #000000;
          border-radius: 5px;
          margin-bottom: 1em;
